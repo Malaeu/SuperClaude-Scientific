@@ -1,0 +1,12 @@
+# Core dependencies for SuperClaude Scientific
+pyyaml>=6.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+requests>=2.31.0
+
+# Testing dependencies
+pytest>=7.4.0
+pytest-mock>=3.11.0
+
+# Optional dependencies for advanced parsing
+html5lib>=1.1

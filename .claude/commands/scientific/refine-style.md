@@ -3,7 +3,7 @@ name: /refine-style
 description: Journal-specific style and formatting refinement
 category: workflow
 complexity: intermediate
-mcp-servers: [context7, serena]
+mcp-servers: [context7, core-memory]
 ---
 
 # /refine-style

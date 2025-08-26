@@ -21,6 +21,13 @@ mcp-servers: [sequential, core-memory, context7]
 3) generate → draft sections respecting template word counts
 4) refine → style/citation/tables to target journal
 
+### refine
+- Если указан `--journal`:
+  1) активировать `agent-journal-spec`
+  2) получить из core-memory нормализованные правила `JournalGuideline`
+  3) сформировать compliance-report (word_counts, refs_style, figures/tables/image_specs)
+  4) выдать список правок по секциям и ссылкам, ограничениям на фигуры/таблицы
+
 ## Notes
 - This is a **context pattern** read by Claude Code; no executable code is run.
 - **Sequential** → многошаговый пайплайн.
