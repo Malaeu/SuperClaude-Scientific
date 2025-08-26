@@ -1,0 +1,19 @@
+{
+  "journal": "Nature",
+  "package_date": "2025-08-26T20:12:16.227776",
+  "manuscript_file": "examples/nature_submission/manuscript_nature.docx",
+  "cover_letter": "examples/nature_submission/cover_letter_nature.txt",
+  "submission_checklist": "examples/nature_submission/submission_checklist_nature.md",
+  "compliance_status": true,
+  "word_count": 373,
+  "reference_count": 0,
+  "figure_count": 0,
+  "issues_to_resolve": [],
+  "next_steps": [
+    "Manuscript is ready for submission to Nature",
+    "Review cover letter and customize for specific submission",
+    "Prepare author information and conflict of interest forms",
+    "Upload files to journal submission system",
+    "Submit manuscript and await editorial decision"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "project_name": "BC_Liver_Transplant_Study",
+  "workflow_completed": "2025-08-26T20:12:16.228901",
+  "literature_review": {
+    "iterations_planned": 10,
+    "iterations_completed": 1,
+    "papers_reviewed": 3,
+    "evidence_sufficiency": "insufficient"
+  },
+  "reference_management": {
+    "total_references": 3,
+    "export_formats": [
+      "RIS",
+      "BibTeX",
+      "CSV"
+    ],
+    "quality_distribution": {
+      "high_quality": 3,
+      "medium_quality": 0,
+      "low_quality": 0,
+      "average_quality": 8.666666666666666
+    }
+  },
+  "manuscript_preparation": {
+    "sections_identified": 14,
+    "total_words": 373,
+    "journals_targeted": [
+      "nature",
+      "lancet",
+      "nejm"
+    ],
+    "submission_packages": 3
+  }
+}

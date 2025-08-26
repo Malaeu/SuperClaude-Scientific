@@ -1,0 +1,19 @@
+{
+  "journal": "The Lancet",
+  "package_date": "2025-08-26T20:12:16.228322",
+  "manuscript_file": "examples/lancet_submission/manuscript_lancet.docx",
+  "cover_letter": "examples/lancet_submission/cover_letter_lancet.txt",
+  "submission_checklist": "examples/lancet_submission/submission_checklist_lancet.md",
+  "compliance_status": true,
+  "word_count": 373,
+  "reference_count": 0,
+  "figure_count": 0,
+  "issues_to_resolve": [],
+  "next_steps": [
+    "Manuscript is ready for submission to The Lancet",
+    "Review cover letter and customize for specific submission",
+    "Prepare author information and conflict of interest forms",
+    "Upload files to journal submission system",
+    "Submit manuscript and await editorial decision"
+  ]
+}
