@@ -1,0 +1,18 @@
+name: journal-harvest
+on:
+  workflow_dispatch: {}
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Install deps
+        run: pip install -r requirements.txt || true
+      - name: Run harvester
+        env:
+          CORE_MEMORY_URL: ${{ secrets.CORE_MEMORY_URL }}
+          CORE_MEMORY_TOKEN: ${{ secrets.CORE_MEMORY_TOKEN }}
+        run: python scripts/journal_harvest.py --sources docs/scientific/journals_sources.yaml
