@@ -12,9 +12,9 @@ mcp-servers: [core-memory]
 - `/journal-ingest --journal "Lancet" --from-file docs/lancet_guidelines.md`
 
 ## Workflow Pattern
-1) Parse the provided guideline text.
-2) Extract normalized fields (see agent-journal-spec Output Contract).
-3) Upsert node `JournalGuideline(journal=<name>)` in **core-memory**.
+1) Parse provided text
+2) Normalize to JournalGuideline contract
+3) Upsert to **core-memory**
 
 ## Notes
-- Idempotent by `journal` key. Supports iterative refinement.
+- Idempotent by `journal` key

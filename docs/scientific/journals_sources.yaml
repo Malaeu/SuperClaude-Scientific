@@ -1,0 +1,14 @@
+# Curated list of author-guideline sources
+journals:
+  - journal: "NEJM"
+    publisher: "NEJM Group"
+    source_url: "https://example.com/nejm/if_author"   # TODO: real URL
+    format: "html"   # html|pdf|md
+  - journal: "Lancet"
+    publisher: "Elsevier"
+    source_url: "https://example.com/lancet/guide"      # TODO: real URL
+    format: "html"
+  - journal: "Nature Medicine"
+    publisher: "Springer Nature"
+    source_url: "https://example.com/nm/ifa"            # TODO: real URL
+    format: "html"
