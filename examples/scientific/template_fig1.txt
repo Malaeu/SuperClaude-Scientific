@@ -1,0 +1,35 @@
+# TEMPLATE FIGURE 1 PLACEHOLDER
+# (This represents template_fig1.png - would be actual image in real usage)
+
+FIGURE TYPE: Kaplan-Meier Survival Curve
+TITLE: Overall survival by sarcopenia status in liver transplant candidates
+
+AXIS SPECIFICATIONS:
+- X-axis: Time (months), range 0-60
+- Y-axis: Survival probability, range 0.0-1.0
+
+CURVE SPECIFICATIONS:
+- Group 1: Non-sarcopenic patients (Blue line)
+- Group 2: Sarcopenic patients (Red line)  
+- 95% Confidence intervals shown as shaded areas
+- Risk tables below plot showing patients at risk
+
+STATISTICAL ANNOTATIONS:
+- Log-rank test p-value: p<0.001
+- Median survival times with 95% CI
+- Number of events per group
+
+LAYOUT:
+- Size: 6" x 4" (suitable for journal publication)
+- Font: Arial, 10pt for axes, 12pt for title
+- Legend: Top right corner
+- Risk table: Below main plot area
+
+SAMPLE DATA POINTS:
+Time(months) | Non-sarcopenic | Sarcopenic
+0            | 1.000          | 1.000  
+12           | 0.890          | 0.745
+24           | 0.824          | 0.612
+36           | 0.778          | 0.523
+48           | 0.745          | 0.467
+60           | 0.712          | 0.398

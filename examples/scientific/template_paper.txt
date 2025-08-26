@@ -1,0 +1,59 @@
+# TEMPLATE PAPER STRUCTURE
+# (This represents a PDF template - would be .pdf in real usage)
+
+## PAGE 1
+TITLE: Body Composition Analysis in Liver Transplantation: A Multicenter Study
+
+ABSTRACT (250 words)
+Background: [Background text...]
+Methods: [Methods description...]
+Results: [Results summary...]
+Conclusions: [Conclusions statement...]
+
+## PAGE 2  
+INTRODUCTION (400 words)
+Liver transplantation represents the definitive treatment for end-stage liver disease...
+[Introduction content continues...]
+
+FIGURE 1 PLACEHOLDER: Patient selection flowchart
+
+## PAGE 3
+METHODS (600 words)
+Study Design: This multicenter prospective cohort study...
+Participants: Adult patients (≥18 years) listed for liver transplantation...
+Body Composition Assessment: CT-based measurements at L3 vertebral level...
+Statistical Analysis: Kaplan-Meier survival curves, Cox proportional hazards models...
+
+TABLE 1 PLACEHOLDER: Baseline patient characteristics
+
+## PAGE 4
+RESULTS (500 words)
+Patient Characteristics: A total of 432 patients were enrolled...
+Survival Analysis: Median follow-up was 18 months...
+Body Composition Outcomes: Sarcopenic patients had significantly worse survival...
+
+FIGURE 2 PLACEHOLDER: Kaplan-Meier survival curves by sarcopenia status
+
+## PAGE 5
+DISCUSSION (400 words)
+This study demonstrates the prognostic significance of body composition...
+Limitations: Single-center design may limit generalizability...
+Clinical Implications: These findings support routine assessment...
+
+REFERENCES (30 references)
+1. Author et al. Title. Journal. 2023;1(1):1-10.
+[References continue...]
+
+## WORD COUNTS
+- Abstract: 250 words
+- Introduction: 400 words  
+- Methods: 600 words
+- Results: 500 words
+- Discussion: 400 words
+- Total: 2,150 words (excluding references)
+
+## FIGURES/TABLES
+- Figure 1: Patient flowchart
+- Table 1: Baseline characteristics
+- Figure 2: Kaplan-Meier curves
+- Total: 2 figures, 1 table
