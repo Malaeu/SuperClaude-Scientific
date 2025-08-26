@@ -3,8 +3,8 @@ name: sci-parse
 description: "Parse scientific presentations and papers using page-by-page analysis"
 category: scientific
 complexity: advanced
-mcp-servers: [context7]
-personas: [paper-parser, bc-transplant-expert]
+mcp-servers: [context7, core-memory]
+personas: [paper-parser, bc-transplant-expert, journal-spec]
 ---
 
 # /sc:sci-parse - Scientific Document Parser
@@ -18,7 +18,7 @@ personas: [paper-parser, bc-transplant-expert]
 
 ## Usage
 ```
-/sc:sci-parse [pdf-path] [--output-dir ./analysis] [--focus results|methods|figures] [--depth quick|comprehensive] [--domain liver|cardiac|general]
+/sc:sci-parse [pdf-path] [--output-dir ./analysis] [--focus results|methods|figures] [--depth quick|comprehensive] [--domain liver|cardiac|general] [--journal "NEJM"|"Lancet"|"Nature"]
 ```
 
 ## Behavioral Flow
@@ -26,7 +26,8 @@ personas: [paper-parser, bc-transplant-expert]
 2. **Content Categorization**: Classification of pages by content type (methods, results, figures, references)
 3. **Information Extraction**: Comprehensive extraction of text, figures, tables, and statistical data
 4. **Knowledge Graph Construction**: Building interconnected understanding of document content
-5. **Structured Output Generation**: Creation of organized analysis files and summaries
+5. **Journal Compliance Refinement**: If `--journal` provided, activate `agent-journal-spec` to retrieve guidelines from core-memory and generate compliance report
+6. **Structured Output Generation**: Creation of organized analysis files and summaries
 
 Key behaviors:
 - Utilizes Claude Code's native PDF reading capabilities for direct document access
@@ -62,6 +63,7 @@ Key behaviors:
 - **Read**: Native PDF processing using Claude Code's built-in capabilities
 - **Write**: Structured output generation in markdown and JSON formats
 - **Context7**: Medical framework and methodology pattern recognition
+- **core-memory**: Journal guidelines storage and retrieval for compliance checking
 - **Grep**: Content pattern matching and information extraction
 - **TodoWrite**: Processing milestone tracking and workflow management
 
@@ -193,6 +195,7 @@ Key behaviors:
 - **Figure Database**: JSON database of all visual content with detailed descriptions
 - **Reference Collection**: RIS-formatted bibliography for literature management
 - **Statistical Summary**: Extracted numerical data and statistical test results
+- **Journal Compliance Report**: When `--journal` provided, detailed compliance analysis with actionable recommendations
 - **Knowledge Graph**: Interconnected representation of document content relationships
 
 ## Quality Standards

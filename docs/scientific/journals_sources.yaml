@@ -2,13 +2,41 @@
 journals:
   - journal: "NEJM"
     publisher: "NEJM Group"
-    source_url: "https://example.com/nejm/if_author"   # TODO: real URL
-    format: "html"   # html|pdf|md
+    source_url: "https://www.nejm.org/author-center/new-manuscripts"
+    format: "html"
+    impact_factor: 78.5
   - journal: "Lancet"
     publisher: "Elsevier"
-    source_url: "https://example.com/lancet/guide"      # TODO: real URL
+    source_url: "https://www.thelancet.com/submission-guidelines"
     format: "html"
+    impact_factor: 56.3
   - journal: "Nature Medicine"
     publisher: "Springer Nature"
-    source_url: "https://example.com/nm/ifa"            # TODO: real URL
+    source_url: "https://www.nature.com/nm/submission-guidelines"
     format: "html"
+    impact_factor: 58.7
+  - journal: "JAMA"
+    publisher: "American Medical Association"
+    source_url: "https://jamanetwork.com/journals/jama/pages/instructions-for-authors"
+    format: "html"
+    impact_factor: 51.3
+  - journal: "BMJ"
+    publisher: "BMJ Publishing Group"
+    source_url: "https://mc.manuscriptcentral.com/bmj"
+    format: "html"
+    impact_factor: 30.2
+  - journal: "Cell"
+    publisher: "Elsevier"
+    source_url: "https://www.cell.com/cell/submission"
+    format: "html"
+    impact_factor: 41.6
+  - journal: "Science"
+    publisher: "AAAS"
+    source_url: "https://www.science.org/content/page/science-information-authors"
+    format: "html"
+    impact_factor: 44.7
+  - journal: "Nature"
+    publisher: "Springer Nature"
+    source_url: "https://www.nature.com/nature/for-authors"
+    format: "html"
+    impact_factor: 50.5
