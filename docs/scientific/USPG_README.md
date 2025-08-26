@@ -17,7 +17,7 @@ USPG (Universal Scientific Paper Generator) is a SuperClaude extension that auto
 - Commands `/sc:*` are **context triggers** that Claude Code reads, not terminal commands
 - Context files live in `~/.claude/...` (in our repo for installation)  
 - Agents are specialized AI assistants activated by specific triggers
-- MCP servers provide additional capabilities: Context7 (journal patterns), Sequential (multi-step workflows), Serena (project memory)
+- MCP integration: **Sequential** (multi-step workflows), **core-memory** (graph-memory for project state), **Context7** (software docs, not journal rules)
 
 ## Quick Start Workflow
 
@@ -89,10 +89,10 @@ USPG (Universal Scientific Paper Generator) is a SuperClaude extension that auto
 - Progressive question refinement
 - Workflow state management
 
-**Serena**: Project memory and persistence
-- Template analysis caching
-- Data mapping preferences
-- Cross-session continuity
+**core-memory**: Project state graph persistence
+- Template analysis caching as graph nodes
+- Data mapping preferences stored as relationships
+- Cross-session continuity via graph memory
 
 ## Example Dataset Structure
 
@@ -135,7 +135,7 @@ USPG automatically detects:
    ```
 
 3. **Verify MCP Servers**:
-   Ensure Context7, Sequential, and Serena MCP servers are configured in Claude Code.
+   Ensure Context7, Sequential, and core-memory MCP servers are configured in Claude Code.
 
 ## Workflow Example
 
@@ -154,7 +154,7 @@ USPG automatically detects:
 - **No executable code**: Everything works through Claude Code's context system
 - **Agent coordination**: Agents work together through trigger patterns
 - **MCP integration**: External tools enhance core functionality
-- **Session persistence**: Serena MCP maintains state across sessions
+- **Session persistence**: core-memory MCP maintains graph state across sessions
 - **Journal adaptation**: Context7 MCP provides current formatting requirements
 
 ## Next Steps

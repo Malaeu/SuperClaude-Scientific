@@ -3,7 +3,7 @@ name: /map-data
 description: Smart data-to-template mapping for scientific variables
 category: workflow
 complexity: intermediate
-mcp-servers: [sequential, serena]
+mcp-servers: [sequential, core-memory]
 ---
 
 # /map-data
@@ -26,10 +26,13 @@ mcp-servers: [sequential, serena]
 - Supports survival analysis, baseline tables, statistical modeling
 
 ## Mapping Heuristics
-- Time + Event columns → Kaplan-Meier analysis
-- Categorical variables → Baseline characteristics table
-- Continuous outcomes → Regression modeling
-- Group variables → Comparative analysis
+
+### Auto-mapping heuristics
+- Survival: `time` + `event` → KM + Cox (primary endpoint).
+- Binary exposures (0/1): logistic/Cox covariates.
+- Grouping vars (e.g., `group`) → stratified analysis + between-group tests.
+- Continuous biomarkers (e.g., `phase_angle`) → descriptive stats, cut-offs, spline sensitivity.
+- Baseline table: demographics (age, sex, bmi) → Table 1 with standardized differences.
 
 ## Output Patterns
 - Statistical analysis recommendations

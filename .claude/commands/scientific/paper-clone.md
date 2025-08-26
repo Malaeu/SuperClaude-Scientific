@@ -3,7 +3,7 @@ name: /paper-clone
 description: USPG pipeline driver (analyze-template, map-data, generate, refine)
 category: workflow
 complexity: advanced
-mcp-servers: [context7, sequential, serena]
+mcp-servers: [sequential, core-memory, context7]
 ---
 
 # /paper-clone
@@ -23,12 +23,12 @@ mcp-servers: [context7, sequential, serena]
 
 ## Notes
 - This is a **context pattern** read by Claude Code; no executable code is run.
-- Uses Sequential MCP for multi-step workflow orchestration
-- Integrates with Serena MCP for project state persistence
-- Leverages Context7 MCP for journal-specific formatting patterns
+- **Sequential** → многошаговый пайплайн.
+- **core-memory** → проектный **graph**: хранит Template structure, Style metrics, JournalGuideline, ReviewIteration.
+- **Context7** → использовать для **технической документации** по софту/библиотекам, не для правил журналов.
 
 ## State Management
-- Project state stored via Serena MCP
+- Project state stored in **core-memory graph** (nodes: Section, Subsection, Transition, FigureSpec, TableSpec, StyleMetrics, JournalGuideline, ReviewIteration).
 - Template analysis cached for reuse
 - Data mapping preferences remembered
 - Journal formatting applied consistently
